@@ -1,9 +1,15 @@
 ---
 title: "Mésure de Témperature et détérmination des propriétés thérmique des matériaux"
 subtitle: "TP1: Utilisation d’une Camera Infraroufe"
-date: "`r Sys.Date()`"
+date: 05/03/2024
 #abstract-title: 'Objectif'
-#abstract: "Concevoir et fabriquer un objet totem unique à l'aide de techniques de dessin à la main et de conception assistée par ordinateur, puis fabriquer un moule à l'aide de la découpe laser pour être utilisé avec la machine Holipresse."
+abstract: "L’objectif est de mettre en pratique certaines notions abordées d’un point de vue théorique dans
+les modules de physique et de mécanique (mécanique du solide déformable, thermodynamique,
+transferts thermiques, optique ondulatoire). Durant les différentes séances, l’étudiant sera
+amené à réaliser et interpréter des essais de déformation (traction, flexion, torsion) par
+extensiométrie mécanique ou électrique, à observer et analyser les changements d’état de la
+matière (fusion, liquéfaction) ainsi que le rayonnement thermique émis par des matériaux, et
+enfin à étudier la diffraction de la lumière par un réseau périodique"
 format:
   pdf:
     #documentclass: article
