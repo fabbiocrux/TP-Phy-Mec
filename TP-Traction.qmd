@@ -1,0 +1,62 @@
+
+---
+title: "Essai de Traction et Extensometrie Mécanique"
+subtitle: "TP: "
+date: 05/03/2024
+#abstract-title: 'Objectif'
+abstract: "L’objectif est de mettre en pratique certaines notions abordées d’un point de vue théorique dans
+les modules de physique et de mécanique (mécanique du solide déformable, thermodynamique,
+transferts thermiques, optique ondulatoire). Durant les différentes séances, l’étudiant sera
+amené à réaliser et interpréter des essais de déformation (traction, flexion, torsion) par
+extensiométrie mécanique ou électrique, à observer et analyser les changements d’état de la
+matière (fusion, liquéfaction) ainsi que le rayonnement thermique émis par des matériaux, et
+enfin à étudier la diffraction de la lumière par un réseau périodique"
+format:
+  pdf:
+    #documentclass: article
+    block-headings: false
+    toc: false 
+    geometry:
+     - top=25mm
+     - left=20mm
+     - bottom=25mm
+     - right=20mm     
+    number-sections: true
+    colorlinks: true    
+    include-in-header:
+      - file: assets/packages.tex
+#reference-location: margin
+#citation-location: margin
+---
+
+\thispagestyle{fancy}
+
+\let\olditshape\itshape 
+\def\itshape{\color{blue}\olditshape}
+
+
+
+::: {.callout-tip}
+## Objectifs de la séance :
+
+- Maitrise de la composition et du comportement mécanique du 2017A T4
+- Prise en main de la machine de traction et de l’extensomètre
+- Maitrise basique d’Excel (tracés de graphe principalement) 
+- Mise en évidence de l’importance d’une mesure locale pour déterminer la loi de comportement d’un matériau
+- Tracé et interprétation d’un diagramme conventionnel $\sigma=f(\epsilon)$
+
+:::
+
+
+
+:::::: {.callout-caution}
+## Attention
+**Les questions 3.1. à 3.5. devront avoir été préparées avant la séance.**
+:::
+
+
+# 1. Principe {.unnumbered}
+
+Il s’agit d’appliquer à une éprouvette un effort $F$ de traction et d’enregistrer simultanément cet effort et l’allongement $\Delta L$ de l’éprouvette qui en résulte.
+
+
