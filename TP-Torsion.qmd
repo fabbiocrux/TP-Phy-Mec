@@ -1,6 +1,6 @@
 
 ---
-title: "EXTENSOMETRIE ELECTRIQUE PAR JAUGES DE DEFORMATION"
+title: "Extensometrie Electrique par Jauges de Déformation"
 subtitle: "TP: FLEXION - TORSION"
 date: 05/03/2024
 #abstract-title: 'Objectif'
@@ -83,7 +83,7 @@ $$
         \\
     \underline{M}(\tau_B, B) = 
         \begin{cases}
-        FL_0 \\
+        F \cdot L_0 \\
         0\\
         0        
         \end{cases}      
@@ -108,10 +108,10 @@ A la distance $l_1=410~mm$ de l'encastrement, l'éprouvette est équipée de ros
 
 :::: {layout="[35, 60]" layout-valign="center"}
 ::: {}
-1. $l_1$,R,0, 
-2. $l_1$,-R,0, 
-3. $l_1$,0,R, et 
-4. $l_1$,0,-R 
+1. Point 1: **($l_1,R,0$)**
+2. Point 2: **($l_1,-R,0$)**
+3. Point 3: **($l_1,0,R$)** et 
+4. Point 4: **($l_1,0,-R$)** 
 :::
 
 ::: {}
@@ -133,7 +133,7 @@ $$
 $$
 
 
-![Tableau](figures/Torsion-04.png){width="40%" fig-align="center"}
+![Tableau](figures/Torsion-04.png){width="60%" fig-align="center"}
 
 
 ## Pont d'extensomètrie
@@ -143,7 +143,7 @@ Un pont d'extensomètrie Vishay-micromesures est prévu : il permet d’effectue
 
 # Rappels des résultats théoriques
 
-## Loi de comportement
+## Loi de comportement
 
 Dans le domaine qui nous intéresse, le duralumin est considéré comme un matériau élastique, linéaire et isotrope. 
 On peut ainsi appliquer la *loi de Hooke*:
@@ -179,10 +179,10 @@ Donc,
 
 \begin{align*} 
 \sigma_{xx}(x,y,z) &=  \dfrac{4 F (l - x)y}{\pi R^4} \\ 
-\sigma_{xy}(x,y,z) &=  -(\dfrac{ F }{2\pi R^2}) (\dfrac{ 3 + 2\nu }{ 1 + \nu}) 
-                             \left(1 - \dfrac{ y^2 }{ R^2} - \dfrac{ 1-2\nu }{3+2\nu} \dfrac{z^2}{R^2}\right) 
+\sigma_{xy}(x,y,z) &=  -\left(\dfrac{ F }{2\pi R^2} \cdot \dfrac{ 3 + 2\nu }{ 1 + \nu} \right) 
+                             \left(1 - \dfrac{ y^2 }{ R^2} - \dfrac{ 1-2\nu }{3+2\nu} \cdot \dfrac{z^2}{R^2}\right) 
                              - \dfrac{2 F l_0 z}{\pi R^4} \\
-\sigma_{xz}(x,y,z) &=  \dfrac{F}{\pi R^4} \dfrac{1 + 2\nu}{1 + \nu} \frac{yz}{R^2} + \frac{2 F l_0 y}{\pi R^4} 
+\sigma_{xz}(x,y,z) &=  \dfrac{F}{\pi R^4} \cdot \dfrac{1 + 2\nu}{1 + \nu} \cdot \frac{yz}{R^2} + \frac{2 F l_0 y}{\pi R^4} 
 \end{align*}
 
 
@@ -195,20 +195,20 @@ Les contraintes aux différents points analysés sont alors les suivantes :
 \begin{align*} 
 \text{Point 1 }(l_1, R,0) &\longrightarrow 
  \begin{bmatrix}
-    \sigma_{xx}(1) =  \dfrac{4 F (l - l_1}{\pi R^4} ;& \sigma_{xy}(1) = 0  ;&  \sigma_{xz}(1) = \dfrac{2 F l_0}{\pi R^3} \\
+    \sigma_{xx}(1) =  \dfrac{4 F (l - l_1)}{\pi R^3} ; &\sigma_{xy}(1)= 0  ; &\sigma_{xz}(1) = \dfrac{2 F l_0}{\pi R^3} \\
     \end{bmatrix} \\ 
-\text{Point 2 }(l_1, -R,0) &\longrightarrow 
+\text{Point 2 }(l_1, -R, 0) &\longrightarrow 
  \begin{bmatrix}
-    \sigma_{xx}(2) =  \dfrac{4 F (l - l_1}{\pi R^4} ;& \sigma_{xy}(2) = 0  ;&  \sigma_{xz}(2) = \dfrac{-2 F l_0}{\pi R^3} \\
+    \sigma_{xx}(2) =  \dfrac{4 F (l - l_1)}{\pi R^3} ; &\sigma_{xy}(2) = 0  ; &\sigma_{xz}(2) = \dfrac{-2 F l_0}{\pi R^3} \\
     \end{bmatrix} \\ 
 \text{Point 3 }(l_1, 0, R) &\longrightarrow 
  \begin{bmatrix}
-    \sigma_{xx}(3) =  0 ;& \sigma_{xy}(3) = -\dfrac{1 + 2\nu}{1+\nu} \dfrac{F}{\pi R^2} - \dfrac{2F l_0}{\pi R^3}  ;&  
+    \sigma_{xx}(3) =  0 ; &\sigma_{xy}(3) = -\dfrac{1 + 2\nu}{1+\nu} \dfrac{F}{\pi R^2} - \dfrac{2F l_0}{\pi R^3}  ;&  
                         \sigma_{xz}(3) = 0 \\
     \end{bmatrix} \\ 
 \text{Point 4 }(l_1, 0, -R) &\longrightarrow 
  \begin{bmatrix}
-    \sigma_{xx}(4) =  0 ;&  \sigma_{xy}(3) = -\dfrac{1 + 2\nu}{1+\nu} \dfrac{F}{\pi R^2} + \dfrac{2F l_0}{\pi R^3}  ;&  \sigma_{xz}(4) = 0 \\
+    \sigma_{xx}(4) =  0 ;&  \sigma_{xy}(4) = -\dfrac{1 + 2\nu}{1+\nu} \dfrac{F}{\pi R^2} + \dfrac{2F l_0}{\pi R^3}  ;&  \sigma_{xz}(4) = 0 \\
     \end{bmatrix} \\ 
 \end{align*}
 
@@ -219,66 +219,104 @@ Les contraintes aux différents points analysés sont alors les suivantes :
 
 Les questions 3.1. à 3.6. devront avoir été préparées avant la séance.
 
-## Proposer un montage expérimental qui n’induise que de la flexion (démontrer en calculant le torseur global en $x=L$ que le montage proposé n’induit que de la flexion). Mêmes questions pour la torsion.
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=7cm ]
+3.1 Proposer un montage expérimental qui n’induise que de la flexion (démontrer en calculant le torseur global en $x=L$ que le montage proposé n’induit que de la flexion). Mêmes questions pour la torsion.
+
+\end{mytextbox}
 
 
-## Déterminer les expressions théoriques des déformations aux points 2 et 3 en fonction de $E$, $\nu$, $R$, $l_0$, $l_1$ et $F$. Puis, faites l’application numérique en vous fixant une longueur de bras de levier $l_0$ comprise entre 50 et 450 mm et une masse comprise entre 5 et 15 kg. Déterminer alors toutes les déformations et les directions principales associées au point 3. 
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=20cm ]
+3.2 Déterminer les expressions théoriques des déformations aux points 2 et 3 en fonction de $E$, $\nu$, $R$, $l_0$, $l_1$ et $F$. Puis, faites l’application numérique en vous fixant une longueur de bras de levier $l_0$ comprise entre $50$ et $450~mm$ et une masse comprise entre $5$ et $15~kg$. Déterminer alors toutes les déformations et les directions principales associées au point 3. 
+
+\end{mytextbox}
 
 
-##  Rappeler le principe d’une jauge de déformation. Rappeler le principe d’un pont de Wheastone et son intérêt. Quels sont les avantages du montage $\frac{1}{2}$ pont sur le montage  $\frac{1}{4}$ de pont ?
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=7cm ]
+3.3  Rappeler le principe d’une jauge de déformation. Rappeler le principe d’un pont de Wheastone et son intérêt. Quels sont les avantages du montage $\frac{1}{2}$ pont sur le montage  $\frac{1}{4}$ de pont ?
+
+\end{mytextbox}
 
 
-##  Justifier l’utilisation d’une rosette triaxiale au point 2. Même question pour la rosette bi-axiale au point 3.
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=7cm ]
+3.4  Justifier l’utilisation d’une rosette triaxiale au point 2. Même question pour la rosette bi-axiale au point 3.
+
+\end{mytextbox}
 
 
-##  Déterminer, pour les points 2 et 3, les relations entre les informations expérimentales fournies par les différentes jauges et les composantes de la matrice des déformations en ces points. 
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=20cm ]
+3.5  Déterminer, pour les points 2 et 3, les relations entre les informations expérimentales fournies par les différentes jauges et les composantes de la matrice des déformations en ces points. 
 Pour rappel, la dilatation linéique relative associée à une direction $\underline{n}$ en un point $M$ s’écrit: 
 $\underline{\epsilon}(M, n) = \underline{^t n} \underline{\underline{E}} (M)\cdot \underline{n}$
 
-## Etude de la linéarité du comportement au point 2 de la jauge orientée selon $\underline{a}$
+\end{mytextbox}
+
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=20cm ]
+3.6 Etude de la linéarité du comportement au point 2 de la jauge orientée selon $\underline{a}$
 En vous appuyant sur les résultats des questions 3.5. et 3.2., quelle est la relation théorique exacte attendue entre la réponse en déformation  mesurée   et la charge appliquée F ? 
-
-
----
+\end{mytextbox}
 
 
 Vérifier cette linéarité (montage $\frac{1}{4}$ de pont) en utilisant Regressi ou Excel.
 Calculer l’écart relatif entre pente théorique et pente expérimentale. Faites une liste la plus exhaustive possible des incertitudes associées aux valeurs théorique et expérimentale qui peuvent expliquer cet écart relatif non nul ?
 
-## Etude du point 2 en $\frac{1}{4}$ de pont
+
+
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=10cm ]
+3.7. Etude du point 2 en $\frac{1}{4}$ de pont
 
 Déterminer expérimentalement la matrice des déformations au point 2 pour une charge F et une longueur de bras $l_0$ fixées (reprendre les valeurs utilisées à la question 3.2.). 
 Comparer vos résultats expérimentaux aux résultats théoriques déterminés à la question 3.2. 
 Calculez l’écart relatif entre ces différentes valeurs ?
+\end{mytextbox}
 
-## Etude du point 2 en $\dfrac{1}{2}$ pont
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=10cm ]
+3.8. Etude du point 2 en $\dfrac{1}{2}$ pont
 
 Avec la même charge $F$ et la même longueur de bras $l_0$, déterminer expérimentalement la matrice des déformations au point 2 en utilisant cette fois un montage $\frac{1}{2}$ pont. 
 Le montage $\frac{1}{2}$ pont donne-t-il de meilleurs résultats que le $\frac{1}{4}$ de pont ? 
 Dans quels cas, le montage $\frac{1}{2}$ pont est-il indispensable ? 
 
-## Etude du point 3 
+\end{mytextbox}
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=10cm ]
+3.9 Etude du point 3 
 Déterminer expérimentalement l’état de déformation associé au point 3 en mesurant $\epsilon_a$ puis $\epsilon_b$. 
 Comparer avec les résultats théoriques (écart relatif).
 Comment expliquez-vous les écarts mesurés entre $\epsilon_a$ et $\epsilon_b$ ? 
 Peut-on mettre en cause le positionnement angulaire de la rosette par l’expérimentateur (en supposant les jauges perpendiculaires l’une à l’autre) ?
 Faites le calcul théorique pour le vérifier. 
 
-##  Découplage du cisaillement et de la torsion
+
+\end{mytextbox}
+
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=15cm ]
+3.10.  Découplage du cisaillement et de la torsion
 
 On peut noter que :
 
 
 
 \begin{align*} 
-\epsilon_{a}^3 = - \epsilon_{xy}^3 = - 
+\epsilon_{a}^3 = - \epsilon_{xy}^3 &= - 
  \begin{bmatrix}
-    \sigma_{xx}(1) =  \dfrac{4 F (l - l_1}{\pi R^4} ;& \sigma_{xy}(1) = 0  ;&  \sigma_{xz}(1) = \dfrac{2 F l_0}{\pi R^3} \\
-    \end{bmatrix} \\ 
-\text{Point 2 }(l_1, -R,0) &\longrightarrow 
+    - \dfrac{(1 + 2\nu) F}{E \pi R^2} - \dfrac{(1 + \nu) F }{ E \pi R^2} \dfrac{2 l_0}{R} \\
+    \end{bmatrix} = -
+    \begin{bmatrix}
+     (\epsilon^3_{xy})^{\text{flexion}} +
+     (\epsilon^3_{xy})^{\text{torsion}}
+    \end{bmatrix}  \\ 
+\epsilon_{a}^4 = - \epsilon_{xy}^4 &= - 
  \begin{bmatrix}
-    \sigma_{xx}(2) =  \dfrac{4 F (l - l_1}{\pi R^4} ;& \sigma_{xy}(2) = 0  ;&  \sigma_{xz}(2) = \dfrac{-2 F l_0}{\pi R^3} \\
-    \end{bmatrix} \\ 
+    - \dfrac{(1 + 2\nu) F}{E \pi R^2} + \dfrac{(1 + \nu) F }{ E \pi R^2} \dfrac{2 l_0}{R} \\
+    \end{bmatrix} = -
+    \begin{bmatrix}
+     (\epsilon^3_{xy})^{\text{flexion}} -
+     (\epsilon^3_{xy})^{\text{torsion}}
+    \end{bmatrix}  \\ 
 \end{align*}
 
 
@@ -286,3 +324,5 @@ On peut noter que :
 En utilisant les rosettes 3 et 4 et en câblant les jauges en pont complet, proposer une méthode expérimentale permettant de déterminer directement la déformation de cisaillement $\epsilon_{xy}$ induite par la flexion. 
 Même question concernant la déformation de cisaillement $\epsilon_{xy}$ induite par la torsion. 
 Comparer ces valeurs aux valeurs théoriques. Quelle est la part prépondérante : flexion ou torsion ? Discuter ...
+
+\end{mytextbox}

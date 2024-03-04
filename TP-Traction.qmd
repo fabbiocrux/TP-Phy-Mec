@@ -1,7 +1,7 @@
 
 ---
-title: "Essai de Traction et Extensometrie Mécanique"
-subtitle: "TP: "
+title: "Extensometrie Mécanique"
+subtitle: "TP: Essai de Traction"
 date: 05/03/2024
 #abstract-title: 'Objectif'
 abstract: "L'objectif est de mettre en pratique certaines notions abordées d'un point de vue théorique dans
@@ -74,7 +74,7 @@ La charge imposée à l'éprouvette est mesurée par un **dynamomètre, et l'all
 
 Une éprouvette de traction typique est caractérisée par :
 
-![](figures/Traction-01.jpg){width="90%" fig-align="center"}
+![](figures/Traction-01.jpg){width="70%" fig-align="center"}
 
 - Des extrémités surdimensionnées (pour éviter les « effets d'extrémités »)
 - Des congés de raccordement entre la partie médiane et les extrémités (pour éviter les effets de concentration de contrainte que provoquent les angles vifs)
@@ -115,8 +115,6 @@ Les questions 3.1. à 3.5. devront avoir été préparées avant la séance.
 
 
 ## Partie théorique.
-
-
 
 
 ::: {.callout-warning}
@@ -167,11 +165,9 @@ En traçant les graphes les plus révélateurs pour chacun des cas, mettez en é
 
 3.6.  Pour l’éprouvette de plus grand diamètre :
 
-- Mesurer le diamètre de l’éprouvette
-
-- Mettre en place l’éprouvette et l’extensomètre,
-
-- Effectuer un essai de traction piloté en déplacement (basé sur la mesure de l’allongement de l’extensomètre) (cf dernière page) et relever les efforts de traction et les allongements affichés par la MTS en essayant de prendre les informations « à la volée ». La traction sera conduite jusqu’à rupture de l’éprouvette.
+1. Mesurer le diamètre de l’éprouvette
+2. Mettre en place l’éprouvette et l’extensomètre,
+3. Effectuer un essai de traction piloté en déplacement (basé sur la mesure de l’allongement de l’extensomètre) (cf dernière page) et relever les efforts de traction et les allongements affichés par la MTS en essayant de prendre les informations « à la volée ». La traction sera conduite jusqu’à rupture de l’éprouvette.
 
 
 

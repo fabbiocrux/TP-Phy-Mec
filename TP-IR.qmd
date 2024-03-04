@@ -1,6 +1,6 @@
 ---
-title: "Mésure de Témperature et détérmination des propriétés thérmique des matériaux"
-subtitle: "TP1: Utilisation d’une Camera Infraroufe"
+title: "Mésure de Témperature et détérmination des propriétés thérmiques des matériaux"
+subtitle: "TP1: Utilisation d’une Camera Infrarouge"
 date: 05/03/2024
 #abstract-title: 'Objectif'
 abstract: "L’objectif est de mettre en pratique certaines notions abordées d’un point de vue théorique dans
@@ -45,24 +45,26 @@ format:
 
 Le rayonnement thermique fait partie des *trois modes de transfert thermique*, avec la *conduction* et la *convection*.
 Au-dessus du zéro absolu, tous les corps qui nous entourent produisent un rayonnement thermique. 
-Le rayonnement infrarouge est une onde électromagnétique dont la longueur d’onde est comprise entre \SI{0.8}{\micro\meter} et \SI{1000}{\micro\meter}; à partir de \SI{125}{\micro\meter}, ces ondes se chevauchent avec les ondes radio électriques.
+Le rayonnement infrarouge est une onde électromagnétique dont la longueur d’onde est comprise entre \SI{0.8}{\micro\meter} et \SI{1000}{\micro\meter};
+à partir de \SI{125}{\micro\meter}, ces ondes se chevauchent avec les ondes radio électriques.
 
-Comme indiqué sur le spectre ci-dessous, la zone d’utilisation de la plupart des caméras IR actuellement sur le marché se situe entre \SI{5}{\micro\meter} -  \SI{5}{\micro\meter} .
-
-![Spectre électromagnétique et longueurs d'onde](figures/IR-00.png){fig-align="center" width="90%"}
+Comme indiqué sur le spectre ci-dessous, la zone d’utilisation de la plupart des caméras IR actuellement sur le marché se situe entre \SI{5}{\micro\meter} -  \SI{10}{\micro\meter} .
 
 
 La thermographie infrarouge est un processus de mesure du rayonnement infrarouge qui convertit la puissance détectée en électricité. 
 L'image résultante dépeint et mesure la **puissance rayonnée** par unité de surface, par l’objet observé.
 Ce procédé de mesure permet la visualisation des différences spatiales de puissance grâce à une image en niveaux de gris, ou en niveaux de couleurs.
 
+![Spectre électromagnétique et longueurs d'onde](figures/IR-00.png){fig-align="center" width="90%"}
+
+
 Les systèmes de détection infrarouge sont sensibles à la puissance rayonnée par unité de surface, par le corps observé, **dont l’intensité dépend de la température et des caractéristiques de surface de l’objet considéré**. 
 Plus l’objet est chaud, plus le flux de chaleur surfacique émis par la surface est important. 
 
-Ce flux de chaleur surfacique émis par la surface (ou puissance rayonnée par unité de surface) est appelé **émittance** du corps observé, et s’exprime en \unit{\watt\per\square\meter}.
+Ce flux de chaleur surfacique émis par la surface (ou puissance rayonnée par unité de surface) est appelé **émittance ($e$)** du corps observé, et s’exprime en \unit{\watt\per\square\meter}.
 
 
-Les caractéristiques de surface sont décrites en termes d’émissivité $\epsilon$, ou *"d’aptitude à émettre un rayonnement infrarouge"*. 
+Les caractéristiques de surface sont décrites en termes **d’émissivité $\epsilon$**, ou *"d’aptitude à émettre un rayonnement infrarouge"*. 
 Plus l’émissivité d’une surface est élevée, plus le matériau rayonnera dans l’infrarouge. 
 *L’émissivité est comprise entre 0 et 1 et est sans unité.* 
 Une émissivité de 1 correspond au corps noir, corps au comportement idéal qui absorbe totalement les rayonnements auquel il est soumis et dont l’émittance est maximale à une température donnée. 
@@ -77,13 +79,13 @@ $$
 :::
 
 ::: {#second-column}
-Où $T$ est la témperature absolue, et $\sigma$  la constante de Stefan-Boltzmann $5,67×10-8 W.m-².K-4
+Où $T$ est la témperature absolue, et $\sigma$  la constante de Stefan-Boltzmann 
 
-$5.67 \times 10^{-8} \;\text{W} / \text{m}^2 \cdot \text{K}$
+$5.67 \times 10^{-8} \frac{W}{m^{2} \cdot K}$ 
 :::
 ::::
 
-On rappelle que le coefficient d’absorption $\alpha$ d’un matériau est égal à son émissivité, et que pour un matériau opaque, la somme des coefficients d’absorption et de réflexion $\rho$ est égale à 1.
+On rappelle que le *coefficient d’absorption $\alpha$* d’un matériau est égal à son *émissivité*, et que pour un matériau opaque, la *somme des coefficients d’absorption et de réflexion $\rho$ est égale à 1*.
 
 Le rayonnement IR est donc directement lié à la température du corps filmé. 
 Dans le cas des caméras de bonne qualité et étalonnée, on peut mesurer la température.
@@ -93,9 +95,9 @@ Les objets situés dans l’environnement de travail subissent une excitation th
 Les corps alentours possédant une température différente du zéro absolu, ils émettent et réfléchissent des rayons infrarouges non maîtrisés.
 Les domaines d’application actuels liés à la mesure de température de surface couvrent de nombreuses activités parmi lesquelles on peut citer :
 
--	L’inspection d’installations électriques
--	La recherche de ponts thermiques et de pertes de chaleur
--	La vérification de niveaux de liquide
+-	L’inspection d’installations électriques.
+-	La recherche de ponts thermiques et de pertes de chaleur.
+-	La vérification de niveaux de liquide.
 -	La recherche de fuites de vapeur dans les installations sous pression.
 -	L’inspection de moteurs électriques, de roulements à billes. 
 -	La recherche de fuites de froid dans les locaux réfrigérés.
@@ -132,22 +134,21 @@ On utilise une plaque subdivisée en 4 zones :
 ::: {}
 
 | **Zone** | **Surface (État et traitement)** |
-|------|:-------------|
+|------|:------------:|
 | Z1    | Rugeuse et non peinte   |
 | Z2    | Rugeuse et peinte  |
 | Z3     | Polie et non peinte   |
 | Z4     | Polie et peinte    |
 : Zones
-
 :::
 ::::
 
 
-Pour information, la peinture noire utilisée a une émissivité de 0.95 dans la gamme $\SIrange{8}{12}{\micro\meter}$.
+Pour information, la peinture noire utilisée a une *émissivité de $0.95$* dans la gamme $\SIrange{8}{12}{\micro\meter}$.
 Dans un premier temps il faut ouvrir le logiciel TP IR et sélectionner la caméra sur le logiciel.
 
 1.  Prenez dans la valise la plaque métallique qui est subdivisée en 4 parties, placez-la sur le banc et centrez-la par rapport à la caméra.
-2.  Faites la mise au point de la caméra grâce à l’onglet « Réglages » (sélectionner mise au point auto).
+2.  Faites la mise au point de la caméra grâce à l’onglet *« Réglages » (sélectionner mise au point auto)*.
 3.  Jouez sur l’orientation de la plaque. Attention, l’image est tournée de 90° par rapport à la position de l’objet.
 
 
@@ -170,6 +171,7 @@ Dans un premier temps il faut ouvrir le logiciel TP IR et sélectionner la camé
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
 1.4. Donnez une définition intuitive basée sur votre observation de cette propriété thermique.
 \end{mytextbox}
+
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=4cm,]
 1.5. Retirez vos mains, qu’observez-vous à l’écran ? Quelle est cette fois la propriété thermique mise en jeu ?
@@ -199,7 +201,7 @@ L’objectif de cette partie du TP est d’étalonner la caméra en température
 :::
 
 
-Nous considérerons que la mesure issue du capteur est proportionnelle à la température de la cible visée.
+**Nous considérerons que la mesure issue du capteur est proportionnelle à la température de la cible visée.**
 
 1. Sur la page d’accueil du logiciel, cliquez sur le bouton *« Etalonnage simplifié de la caméra »*.
 2. Prenez l’échantillon de PVC noir, inséré dans un environnement isolant, muni d’un tapis chauffant et d’un capteur thermocouple.
@@ -212,7 +214,7 @@ Nous considérerons que la mesure issue du capteur est proportionnelle à la tem
 
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
-2.1. Exportez les données du tableau sous Excel et tracez la courbe T = f(Puissance) en affichant la régression linéaire et le coefficient de corrélation. Quelles sont les valeurs expérimentales des coefficients d’étalonnage A et B ?
+2.1. Exportez les données du tableau sous Excel et tracez la courbe $T = f(Puissance)$ en affichant la régression linéaire et le coefficient de corrélation. Quelles sont les valeurs expérimentales des coefficients d’étalonnage A et B ?
 \end{mytextbox}
 
 9. Cliquez sur le bouton « QUITTER » pour sortir de l’interface d’étalonnage et revenir à la fenêtre d’accueil du logiciel.
@@ -240,7 +242,7 @@ Il faut utiliser l’onglet *« Mesure d’émissivité »* qui se trouve sur l�
 
 Le rayonnement arrivant sur un matériau peut être absorbé, réfléchi ou transmis :
 
-![](figures/IR-02.jpg)
+![](figures/IR-02.jpg){width="80%" fig-align="center"}
 :::
 
 ::: {#second-column}
@@ -292,6 +294,7 @@ Pour que la caméra mesure la température réelle de l’objet, **il est import
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
 3.5. En utilisant la méthode de détermination de l’émissivité présentée ci-dessus, déterminez l’émissivité des différentes surfaces à 50°C (peinture noire, peinture blanche, acier brut, scotch transparent). Rassemblez les résultats dans un tableau.
+
 \end{mytextbox}
 
 
@@ -314,7 +317,7 @@ Le comportement asymptotique aux temps longs de ce thermogramme est inversement 
 
 
 $$
-\Delta T(t) = \frac{Q \times \sqrt{\pi} \times \sqrt{t}}{S \times b}  + cste
+\Delta T(t) = \frac{Q \times  \sqrt{t}}{S \times b \times \sqrt{\pi}}  + cste
 $$
 
 
@@ -326,10 +329,10 @@ Où $Q$ est la puissance injectée au système, $\Delta T$ l’augmentation de t
 
 Il faut donc dans un premier temps déterminer *Q* à partir du thermogramme d’un échantillon d’effusivité connue, ainsi que la surface visée par la caméra.
 
-![](figures/IR-03.png){width="90%" fig-align="center"}
+![](figures/IR-03.png){width="80%" fig-align="center"}
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
-4.1. En utilisant les lois trigonométriques et le schéma suivant, déterminez la surface de l’échantillon visée par la caméra, après avoir mesuré d avec la règle à disposition.
+4.1. En utilisant les lois trigonométriques et le schéma suivant, déterminez la surface de l’échantillon visée par la caméra, après avoir mesuré $d$ avec la règle à disposition.
 
 
 \end{mytextbox}
@@ -340,13 +343,14 @@ Sur la page d’accueil du logiciel, cliquez sur le bouton *« Test puissance »
 2.  Branchez le boîtier relais à une prise électrique et les deux lampes halogènes à ce dernier.
 3.  Placez l’échantillon de bois sous la caméra et vérifiez qu’il est bien centré dans le cadre de la caméra.
 4.  Faites la mise au point de la caméra sur cet échantillon grâce au bouton *« Réglages caméra »*.
+5.  Appuyez sur le bouton *« Lancer l’acquisition »* pour activer le chauffage et démarrer l’expérience.
+
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
 4.2. Qu’observez-vous sur l’image du haut ? Quel phénomène est ici mis en jeu ?
 \end{mytextbox}
 
 
-5.  Appuyez sur le bouton *« Lancer l’acquisition »* pour activer le chauffage et démarrer l’expérience.
 6. Au bout de 35 secondes le chauffage et l’acquisition s’arrêtent, le tableau situé à droite de l’écran se remplit et vous devez observer une courbe typique *« Plan Chaud »* sur le graphique du bas.
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
@@ -388,6 +392,10 @@ Sur la page d’accueil du logiciel, cliquez sur le bouton *« Test puissance »
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
 4.9. Calculez à partir du coefficient directeur de cette courbe l'effusivité thermique du matériau. Attention à recalculer, si nécessaire, la surface visée.
+\end{mytextbox}
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+4.10. Recommencez plusieurs fois l'expérience afin de tester sa reproductibilité et comparez avec la valeur tabulée:
 \end{mytextbox}
 
 
