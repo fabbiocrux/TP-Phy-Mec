@@ -86,6 +86,8 @@ Une éprouvette de traction typique est caractérisée par :
 - Déplacement de la traverse ($m$)
 - Allongement local ($m$) par le biais d'un extensomètre mécanique dans la partie utile
 
+![](figures/Traction-02-3.png){width="90%" fig-align="center"}
+
 
 # Répresentation graphique d'un essai de traction
 
@@ -117,9 +119,9 @@ Les questions 3.1. à 3.5. devront avoir été préparées avant la séance.
 ## Partie théorique.
 
 
-::: {.callout-warning}
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
 3.1. Les essais sont effectués sur des éprouvettes constitués d’un alliage d’aluminium : le 2017A T4. Effectuez une recherche bibliographique pour déterminer quelle est la composition chimique du 2017. De manière plus générale, à quoi correspond la nomenclature 2XXX ? Quel est le nom usuel du 2017 ? A quoi correspond la terminologie T4 ? Expliquez les raisons de ce traitement ? 
-:::
+\end{mytextbox}
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
 3.2.  A l’aide d’une recherche bibliographie, déterminer le module théorique d’Young E du 2017A T4 et son coefficient de Poisson. Afin d’être le plus exhaustif possible, vous devrez vous appuyer au minimum sur trois sources bibliographiques différentes.  L’aluminium est-il censé être un matériau fragile ou ductile ? 
@@ -175,25 +177,31 @@ En traçant les graphes les plus révélateurs pour chacun des cas, mettez en é
 3.7. Que pensez-vous du profil de rupture de l’éprouvette ? A quoi est-il dû selon vous ?
 \end{mytextbox}
 
-\begin{tcolorbox}[sharp corners, colback=white, height=7cm,]
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=8cm]
 
 3.8. Sur un premier graphique, superposer les courbes $F = f(\Delta L)$ issues de l’extenso et de la MTS. 
 Pourquoi les courbes ne sont pas superposées et dans quel cas idéal pourraient-elles l’être ? 
 Sur un deuxième graphique, représentez l’allongement MTS en fonction de l’allongement extenso. Que voyez-vous ? Déterminez les pentes de chacune des portions de droite.
 Sur les deux graphiques précédents, repérer les domaines élastiques et les domaines plastiques.	 
 
-\end{tcolorbox}
+\end{mytextbox}
 
 ::: {.callout-tip}
 
+La mesure de l’allongement entre les deux traverses implique l'ensemble de l'éprouvette, et donc des zones où l'uni-axialité de la contrainte n'est pas vérifiée, ce qui introduit une erreur dans la mesure. 
+En outre, lorsque le déplacement est évalué directement grâce à celui de la traverse, la raideur de la machine (mors+traverse) intervient dans les résultats de déformation obtenus : elle se comporte comme un ressort de raideur $K~(N/m)$ en série avec l'éprouvette. 
+Après avoir démontré théoriquement que l’on est censé avoir :
 
-La mesure de l’allongement entre les deux traverses implique l'ensemble de l'éprouvette, et donc des zones où l'uni-axialité de la contrainte n'est pas vérifiée, ce qui introduit une erreur dans la mesure. En outre, lorsque le déplacement est évalué directement grâce à celui de la traverse, la raideur de la machine (mors+traverse) intervient dans les résultats de déformation obtenus : elle se comporte comme un ressort de raideur K (N/m) en série avec l'éprouvette. Après avoir démontré théoriquement que l’on est censé avoir :
-
-Déterminer la valeur de K à partir de vos mesures expérimentales dans le domaine élastique. 
-Comparer cette valeur avec la rigidité de structure de l’éprouvette.
-Qu’en concluez-vous ?
-
+$$
+\Delta L_{MTS} = \Delta L_{extenso} + \frac{F}{K}
+$$
 :::
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=8cm]
+Déterminer la valeur de K à partir de vos mesures expérimentales dans le domaine élastique. Comparer cette valeur avec la rigidité de structure de l’éprouvette.
+Qu’en concluez-vous ?
+\end{mytextbox}
+
 
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries]
@@ -202,13 +210,14 @@ Calculer le module d’Young $E$ du duralumin. Quel est l’écart relatif avec 
 \end{mytextbox}
 
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
-3.10. Pour l’éprouvette de plus petit diamètre, on souhaite tracer la réponse F=f(l) en restant dans le domaine élastique. 
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=12cm]
+3.10. Pour l’éprouvette de plus petit diamètre, on souhaite tracer la réponse $F=f(\Delta l)$ en restant dans le domaine élastique. 
 
 Déterminer théoriquement la force qui ne doit pas être dépassée.
 Enregistrer la force en fonction de l’allongement (issu de l’extensomètre uniquement) jusqu’atteindre cette force limite. Revenir ensuite à force nulle pour vérifier que l’éprouvette n’a pas plastifié. 
-Sur un même graphique, représenter, dans le domaine élastique uniquement, F=f(l) pour les deux éprouvettes. Analyse des résultats ?
-Sur un deuxième graphique, représenter, dans le domaine élastique uniquement, f() pour les deux éprouvettes. Conclusions ?
+
+Sur un même graphique, représenter, dans le domaine élastique uniquement, $F=f(\Delta l)$ pour les deux éprouvettes. Analyse des résultats ?
+Sur un deuxième graphique, représenter, dans le domaine élastique uniquement, $\sigma = f(\epsilon)$ pour les deux éprouvettes. Conclusions ?
 
 
 \end{mytextbox}

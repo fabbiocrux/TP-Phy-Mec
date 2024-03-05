@@ -317,7 +317,7 @@ Le comportement asymptotique aux temps longs de ce thermogramme est inversement 
 
 
 $$
-\Delta T(t) = \frac{Q \times  \sqrt{t}}{S \times b \times \sqrt{\pi}}  + cste
+\Delta T(t) = \frac{Q \times \sqrt{\pi} \times \sqrt{t}}{S \times b }  + cste
 $$
 
 
@@ -394,7 +394,7 @@ Sur la page d’accueil du logiciel, cliquez sur le bouton *« Test puissance »
 4.9. Calculez à partir du coefficient directeur de cette courbe l'effusivité thermique du matériau. Attention à recalculer, si nécessaire, la surface visée.
 \end{mytextbox}
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=6cm]
 4.10. Recommencez plusieurs fois l'expérience afin de tester sa reproductibilité et comparez avec la valeur tabulée:
 \end{mytextbox}
 
@@ -409,13 +409,13 @@ Sur la page d’accueil du logiciel, cliquez sur le bouton *« Test puissance »
 
 
 
-# RAPPEL {.unnumbered}
+# RAPPEL: Principales propriétés thermiques des matériaux{.unnumbered}
 
 
 | **Propriété** | **Symbole** | **Unité** | **Relation** | **Signification physique** |
 |---|:--:|:--:|:--:|:---------|
-|Conductivité thermique | $\alpha$ | $W.m^{-1}.K^{-1}$ |  | Caractérise l’aptitude d’un corps à transférer la chaleur. |
+|Conductivité thermique | $\lambda$ | $W.m^{-1}.K^{-1}$ |  | Caractérise l’aptitude d’un corps à transférer la chaleur. |
 | Capacité thermique massique | $c$ | $J.K^{-1}.kg^{-1}$ | | Caractérise la capacité d'un matériau à accumuler ou restituer de l'énergie thermique, quand sa température varie |
-| Diffusivité thermique | $a$ | $m^2.s^{-1}$ |  $a = \frac{\alpha}{\rho \times c}$  | Détermine l’inertie thermique d’un matériau, sa prédisposition à garder sa température lorsqu’intervient une perturbation. Si la perturbation l'amène vers une nouvelle température d'équilibre, une faible diffusivité représente la "lenteur" avec laquelle ce nouvel équilibre est atteint. |
+| Diffusivité thermique | $a$ | $m^2.s^{-1}$ |  $a = \dfrac{\lambda}{\rho \times c}$  | Détermine l’inertie thermique d’un matériau, sa prédisposition à garder sa température lorsqu’intervient une perturbation. Si la perturbation l'amène vers une nouvelle température d'équilibre, une faible diffusivité représente la "lenteur" avec laquelle ce nouvel équilibre est atteint. |
 | Effusivité thermique | $b$ | $J.m^{-2}.K^{-1}.s^{-1/2}$ | | Caractérise la capacité d’un matériau  à échanger de l’énergie thermique avec son environnement |
 : Propriétés thermiques des matériaux 

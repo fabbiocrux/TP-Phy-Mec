@@ -220,7 +220,8 @@ Les contraintes aux différents points analysés sont alors les suivantes :
 Les questions 3.1. à 3.6. devront avoir été préparées avant la séance.
 
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=7cm ]
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=8cm ]
 3.1 Proposer un montage expérimental qui n’induise que de la flexion (démontrer en calculant le torseur global en $x=L$ que le montage proposé n’induit que de la flexion). Mêmes questions pour la torsion.
 
 \end{mytextbox}
