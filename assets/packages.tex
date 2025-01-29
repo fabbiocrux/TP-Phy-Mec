@@ -1,15 +1,18 @@
 \usepackage{tikz}
 \usepackage{fancyhdr}
+\usepackage{fancyhdr} % en-têtes et pieds de page
+\usepackage[explicit]{titlesec} % titres de chapitres, sections, etc.
 
 \pagestyle{fancy}          
-\fancyhead[R]{ENSGSI 2AP - 2023/2024}
+\fancyhead[R]{ENSGSI 2AP - 2024/2025}
 \fancyhead[L]{\includegraphics[width=2cm]{figures/ENSGSI.png}}
 \fancyfoot[L]{TP Mécanique - 2AP}
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{ENSGSI}
 
+
 \renewcommand{\footrulewidth}{0.3pt}% default is 0pt
-\renewcommand{\abstractname}{\vspace{-1.5cm} Objectif}
+% \renewcommand{\abstractname}{\vspace{-1.5cm} Objectif}
 
 % Font ENSGSI
 %\usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif\usepackage[T1]{fontenc}
@@ -31,3 +34,54 @@
 }
 
 
+
+% Mise en forme des titres de chapitres : 
+
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt} 
+\titleformat{\chapter}[display]
+  {\LARGE\bfseries\sffamily}
+  {}
+  {12pt}
+  {%
+\begin{tcolorbox}[
+	enhanced jigsaw,
+	title={Mécanique du Solide Déformable},
+	fonttitle=\normalsize\sffamily,
+	halign=center,
+	top=\baselineskip,
+	colback=red!10!white,
+	colframe=red!50!black,
+	boxrule=1.2pt,
+	colbacktitle=red!50!white!75!black,
+	attach boxed title to top center={yshift=-0.25mm-\tcboxedtitleheight/			2,yshifttext=2mm-\tcboxedtitleheight/2},
+	boxed title style={enhanced,boxrule=0.5mm,
+	frame code={ \path[tcb fill frame] ([xshift=-4mm]frame.west) -- 				(frame.north west)
+    -- (frame.north east) -- ([xshift=4mm]frame.east)
+    -- (frame.south east) -- (frame.south west) -- cycle; },
+    interior code={ \path[tcb fill interior] ([xshift=-2mm]interior.west)
+    -- (interior.north west) -- (interior.north east)
+    -- ([xshift=2mm]interior.east) -- (interior.south east) -- (interior.south 		west)
+    -- cycle;}  },
+ 	drop shadow]
+    #1
+\end{tcolorbox}
+}
+
+
+
+
+% Mise en forme des titres de sections : 
+
+% \renewcommand*{\thesection}{\Roman{section}}  
+% \titlespacing*{\section}{0pt}{0pt}{-1ex}
+% \titleformat{\section}
+%   {\Large\bfseries\sffamily}
+%   {}{0pt}
+%   {\begin{tcolorbox}[
+% 	enhanced jigsaw,
+%     boxrule=1.2pt,
+% 	colback=green!10!white,
+% 	colframe=green!50!black,    
+%     left=5pt,
+%     drop shadow]\thesection\hskip0.7em#1\end{tcolorbox}}
+    

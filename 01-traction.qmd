@@ -1,0 +1,257 @@
+---
+title: Essai de Traction et Extensometrie Mécanique
+---
+
+
+# TP: Essai de Traction
+## Objectif:
+
+L'objectif est de mettre en pratique certaines notions abordées d'un point de vue théorique dans les modules de physique et de mécanique (mécanique du solide déformable, thermodynamique, transferts thermiques, optique ondulatoire). 
+Durant les différentes séances, l'étudiant sera amené à réaliser et interpréter des essais de déformation (traction, flexion, torsion) par extensiométrie mécanique ou électrique, à observer et analyser les changements d'état de la matière (fusion, liquéfaction) ainsi que le rayonnement thermique émis par des matériaux, et enfin à étudier la diffraction de la lumière par un réseau périodique.
+
+
+::: {.callout-tip title="Objectifs de la séance"} 
+- Maitrise de la composition et du comportement mécanique du 2017A T4
+- Prise en main de la machine de traction et de l'extensomètre
+- Maitrise basique d'Excel (tracés de graphe principalement) 
+- Mise en évidence de l'importance d'une mesure locale pour déterminer la loi de comportement d'un matériau
+- Tracé et interprétation d'un diagramme conventionnel $\sigma=f(\epsilon)$
+:::
+
+:::{.callout-caution title="Attention"}
+**Les questions 3.1. à 3.5. devront avoir été préparées avant la séance.**
+:::
+
+
+\newpage
+
+# Principe de l'Essaie de Traction
+
+## Machine de traction  
+
+Il s'agit d'appliquer à une éprouvette un effort $F$ de traction et d'enregistrer simultanément cet effort et l'allongement $\Delta L$ de l'éprouvette qui en résulte.
+
+
+:::{layout="[50,-5,50]"}
+![Machine de Traction](figures/Traction-00.png){width="100%" fig-align="center"}
+
+:::{}
+Elle est constituée d'un bâti rigide qui comprend une traverse fixe à laquelle est fixée une des têtes de l'éprouvette.
+L'autre extrémité de l'éprouvette est fixée à une traverse mobile. 
+Le mouvement de la traverse mobile est assuré par un moteur électrique agissant sur un système de vis sans fin. 
+La charge imposée à l'éprouvette est mesurée par un **dynamomètre, et l'allongement par un extensomètre**.
+:::
+:::
+
+## Éprouvettes 
+
+Une éprouvette de traction typique est caractérisée par :
+
+:::{ layout="[50, -5, 45]" layout-valign="center"}
+:::{}
+
+- Des extrémités surdimensionnées (pour éviter les "effets d'extrémités")
+- Des congés de raccordement entre la partie médiane et les extrémités (pour éviter les effets de concentration de contrainte que provoquent les angles vifs)
+- Une partie médiane cylindrique dans laquelle le champ de contrainte est supposé homogène, de traction simple parallèlement à l'axe de l'éprouvette.
+
+:::
+
+![](figures/Traction-01.jpg){fig-align="center"}
+
+:::
+
+## Mesures expérimentales
+
+:::{ layout="[35, -5, 45]" layout-valign="center"}
+:::{}
+
+- Force ($N$).
+- Déplacement de la traverse ($m$).
+- Allongement local ($m$) par le biais d'un extensomètre mécanique dans la partie utile.
+
+:::
+
+:::{}
+![](figures/Traction-02-3.png){width="90%" fig-align="center"}
+:::
+:::
+
+## Répresentation graphique d'un essai de traction
+
+Si on trace l’évolution de la contrainte nominale $\sigma^n = \frac{F}{S_0}$ en fonction de la déformation nominale $\epsilon^n = \frac{\Delta L}{l_0}$, on obtient dans certains cas la courbe suivante:
+
+
+:::{layout="[60, -5, 35]" layout-valign="center"}
+::: {}
+![](figures/Traction-04.png){width="100%" fig-align="center"}
+:::
+
+::: {}
+
+- OA : déformation élastique réversible
+- AC : déformation plastique homogène
+- CD : Instabilité plastique (striction)
+
+:::
+:::
+
+
+
+# Questions
+
+Les questions de la partie théorique devront avoir été préparées avant la séance.
+
+
+## Partie théorique.
+
+- **Les essais sont effectués sur des éprouvettes constitués d’un alliage d’aluminium : le 2017A T4.** 
+   1. Effectuez une recherche bibliographique pour déterminer quelle est **la composition chimique du 2017**. 
+   1. De manière plus générale, à quoi correspond la nomenclature 2XXX ? 
+   1. Quel est le nom usuel du 2017 ? 
+   1. A quoi correspond la terminologie T4 ? Expliquez les raisons de ce traitement ?
+
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+
+
+1.  A l’aide d’une recherche bibliographie, déterminer le **module théorique d’Young E du 2017A T4** et son **coefficient de Poisson**. Afin d’être le plus exhaustif possible, vous devrez vous appuyer au minimum sur trois sources bibliographiques différentes.  L’aluminium est-il censé être un matériau fragile ou ductile ?
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+
+
+1. On suppose effectuer un essai de traction selon l’axe $i$. Déterminer la matrice des contraintes et la matrice des déformations loin des bords. Tracer le cercle de Mohr en contraintes. Pour quelle direction a-t-on le cisaillement maximal ?
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+
+
+1. A l’aide d’une recherche bibliographique, citez au moins deux avantages et deux inconvénients d’un extensomètre à couteaux par rapport à une jauge de déformation électrique ?
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+
+
+
+---
+
+\newpage
+
+## Partie Expérimentale 
+
+
+- Pour l’éprouvette de plus grand diamètre :
+
+   1. Mesurer le diamètre de l’éprouvette
+   2. Mettre en place l’éprouvette et l’extensomètre
+   3. Effectuer un essai de traction piloté en déplacement (basé sur la mesure de l’allongement de l’extensomètre) (cf dernière page) et relever les efforts de traction et les allongements affichés par la MTS en essayant de prendre les informations « à la volée ». La traction sera conduite jusqu’à rupture de l’éprouvette.
+
+
+
+- **Que pensez-vous du profil de rupture de l’éprouvette ? A quoi est-il dû selon vous ?**
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+
+
+- **Sur un premier graphique, superposer les courbes $F = f(\Delta L)$ issues de l’extenso et de la MTS.** 
+   1. Pourquoi les courbes ne sont pas superposées et dans quel cas idéal pourraient-elles l’être ? 
+   2. Sur un deuxième graphique, représentez l’allongement MTS en fonction de l’allongement extenso. Que voyez-vous ? 
+   3. Déterminez les pentes de chacune des portions de droite.
+   4. Sur les deux graphiques précédents, repérer les domaines élastiques et les domaines plastiques.	 
+
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=8cm]
+
+
+\end{mytextbox}
+
+::: {.callout-tip}
+
+La mesure de l’allongement entre les deux traverses implique l'ensemble de l'éprouvette, et donc des zones où l'uni-axialité de la contrainte n'est pas vérifiée, ce qui introduit une erreur dans la mesure. 
+En outre, lorsque le déplacement est évalué directement grâce à celui de la traverse, la raideur de la machine (mors+traverse) intervient dans les résultats de déformation obtenus : elle se comporte comme un ressort de raideur $K~(N/m)$ en série avec l'éprouvette. 
+Après avoir démontré théoriquement que l’on est censé avoir :
+
+$$
+\Delta L_{MTS} = \Delta L_{extenso} + \frac{F}{K}
+$$
+:::
+
+
+- **Déterminer la valeur de K à partir de vos mesures expérimentales dans le domaine élastique. Comparer cette valeur avec la rigidité de structure de l’éprouvette. Qu’en concluez-vous ?**
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=8cm]
+
+\end{mytextbox}
+
+
+
+- **Calculer la déformation nominale $\epsilon$ (issue de l’extensometre) et la contrainte nominale $\sigma$. Représenter $\sigma = f(\epsilon)$ sur Excel. Calculer le module d’Young $E$ du duralumin. Quel est l’écart relatif avec la valeur théorique ?**
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+
+- **Pour l’éprouvette de plus petit diamètre, on souhaite tracer la réponse $F=f(\Delta l)$ en restant dans le domaine élastique.**
+   1. Déterminer théoriquement la force qui ne doit pas être dépassée.
+   1. Enregistrer la force en fonction de l’allongement (issu de l’extensomètre uniquement) jusqu’atteindre cette force limite. 
+   1. Revenir ensuite à force nulle pour vérifier que l’éprouvette n’a pas plastifié. 
+   1. Sur un même graphique, représenter, dans le domaine élastique uniquement, $F=f(\Delta l)$ pour les deux éprouvettes. Analyse des résultats ?
+   1. Sur un deuxième graphique, représenter, dans le domaine élastique uniquement, $\sigma = f(\epsilon)$ pour les deux éprouvettes. Conclusions ?
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=5cm]
+
+
+
+\end{mytextbox}
+
+- **Comment aurait-on pu déterminer le coefficient de Poisson ?** 
+
+\begin{mytextbox}[colupper=blue,fontupper=\bfseries]
+
+\end{mytextbox}
+ 
+
+\newpage
+
+# Eprouvette N°1
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabu} to \textwidth {X | X | X }
+\toprule
+Allongement extenso (mm) & 
+ Allongement MTS (mm) & 
+   Force (kN) \\ 
+\midrule
+0                                              & 0                                         & 0                               \\ \midrule
+30                                             &                                           &                                 \\ \midrule
+60                                             &                                           &                                 \\ \midrule
+90                                             &                                           &                                 \\ \midrule
+120                                            &                                           &                                 \\ \midrule
+150                                            &                                           &                                 \\ \midrule
+165                                            &                                           &                                 \\ \midrule
+180                                            &                                           &                                 \\ \midrule
+200                                            &                                           &                                 \\ \midrule
+250                                            &                                           &                                 \\ \midrule
+300                                            &                                           &                                 \\ \midrule
+500                                            &                                           &                                 \\ \midrule
+700                                            &                                           &                                 \\ \midrule
+900                                            &                                           &                                 \\ \midrule
+1200                                           &                                           &                                 \\ \midrule
+1400                                           &                                           &                                 \\ \midrule
+1600                                           &                                           &                                 \\ \midrule
+2000                                           &                                           &                                 \\ \midrule
+2200                                           &                                           &                                 \\ \midrule
+2600                                           &                                           &                                 \\ \midrule
+2800                                           &                                           &                                 \\ \midrule
+3000                                           &                                           &   
+\\ \bottomrule                            
+
+\end{tabu}

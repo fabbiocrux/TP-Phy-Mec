@@ -1,9 +1,10 @@
-
 ---
+lang: fr
 title: "Extensometrie Electrique par Jauges de Déformation"
 subtitle: "TP: FLEXION - TORSION"
-date: 05/03/2024
-#abstract-title: 'Objectif'
+date: Janvier 26
+ensegnant: Fabio CRUZ
+abstract-title: 'Objectif'
 abstract: "L'objectif est de mettre en pratique certaines notions abordées d'un point de vue théorique dans
 les modules de physique et de mécanique (mécanique du solide déformable, thermodynamique,
 transferts thermiques, optique ondulatoire). Durant les différentes séances, l'étudiant sera
@@ -11,62 +12,37 @@ amené à réaliser et interpréter des essais de déformation (traction, flexio
 extensiométrie mécanique ou électrique, à observer et analyser les changements d'état de la
 matière (fusion, liquéfaction) ainsi que le rayonnement thermique émis par des matériaux, et
 enfin à étudier la diffraction de la lumière par un réseau périodique"
-format:
-  #docx: default
-  pdf:
-    #documentclass: article
-    block-headings: false
-    toc: false 
-    geometry:
-     - top=25mm
-     - left=20mm
-     - bottom=25mm
-     - right=20mm     
-    number-sections: true
-    colorlinks: true    
-    include-in-header:
-      - file: assets/packages.tex
-#reference-location: margin
-#citation-location: margin
 ---
 
-\thispagestyle{fancy}
-
-\let\olditshape\itshape 
-\def\itshape{\color{blue}\olditshape}
 
 
-
-
-::: {.callout-tip}
-## Objectifs de la séance :
-
+::: {.callout-tip title="Objectifs de la séance"}
 - Détermination théorique de l'état de déformation en différents points d'une poutre droite de section circulaire soumise à une sollicitation de flexion-torsion (cf. TD n°10)
 - Maitrise du fonctionnement d’une jauge de déformation. Pour rappel, le principe de l'extensométrie par jauges de déformation est décrit dans le cours de MSD (Chap. 7 et TD n°9). 
 - Détermination expérimentale de la matrice des déformations en un point d'une poutre droite déformée à l’aide de rosettes biaxiales ou triaxiales. 
-
 :::
 
-::: {.callout-caution}
-## Attention
+::: {.callout-caution title="Attention"}
 Les questions 3.1. à 3.6. devront avoir été préparées avant la séance. Les réponses seront notées en début de TP.
 
-**Conseils :** la préparation de ce TP est relativement longue ; ne vous y prenez pas au dernier moment ! Par expérience, une préparation bâclée conduit automatiquement à une note finale inférieure à la moyenne…
-
+**Conseils :** la préparation de ce TP est relativement longue ; ne vous y prenez pas au dernier moment ! Par expérience, une préparation bâclée conduit automatiquement à une note finale inférieure à la moyenne.
 :::
 
 
 
 # Moyens expérimentaux
 
-![](figures/Torsion-00.png){width="75%" fig-align="center"}
-
 ## Éprouvette
 
 On dispose d'une éprouvette en duralumin de section circulaire de rayon $R=15~mm$ et de longueur $l=900~mm$.
 Elle est encastrée à l'une de ses extrémités $(x=0)$ et chargée à l'autre $(x=l)$ par l'intermédiaire d'un bras de longueur $l_0$ variable :
 
+:::{layout="[50,-5,50]" layout-valign="center"}
+![](figures/Torsion-00.png){width="75%" fig-align="center"}
+
 ![](figures/Torsion-01.png){width="75%" fig-align="center"}
+:::
+
 
 Ainsi, pour la surface $x=l$, le torseur global équivalent associé au chargement s'écrit en $B$, 
 
@@ -219,54 +195,95 @@ Les contraintes aux différents points analysés sont alors les suivantes :
 
 Les questions 3.1. à 3.6. devront avoir été préparées avant la séance.
 
+::: {.questions}
+
+[]{.question options="1"} 
+Proposer un montage expérimental qui n’induise que de la flexion (démontrer en calculant le torseur global en $x=L$ que le montage proposé n’induit que de la flexion). Mêmes questions pour la torsion.
 
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=8cm ]
-3.1 Proposer un montage expérimental qui n’induise que de la flexion (démontrer en calculant le torseur global en $x=L$ que le montage proposé n’induit que de la flexion). Mêmes questions pour la torsion.
+:::{.solutionbox arguments="15cm"}
 
-\end{mytextbox}
+- Pour n’imposer que de la flexion, il suffit tout simplement de suspendre un poids au bout de la barre :
 
-
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=20cm ]
-3.2 Déterminer les expressions théoriques des déformations aux points 2 et 3 en fonction de $E$, $\nu$, $R$, $l_0$, $l_1$ et $F$. Puis, faites l’application numérique en vous fixant une longueur de bras de levier $l_0$ comprise entre $50$ et $450~mm$ et une masse comprise entre $5$ et $15~kg$. Déterminer alors toutes les déformations et les directions principales associées au point 3. 
-
-\end{mytextbox}
+![$R(\tau) = -F \underline{j}$](figures/solutions/torsion/flexion.png){width="4cm" fig-align="center"}
 
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=7cm ]
-3.3  Rappeler le principe d’une jauge de déformation. Rappeler le principe d’un pont de Wheastone et son intérêt. Quels sont les avantages du montage $\frac{1}{2}$ pont sur le montage  $\frac{1}{4}$ de pont ?
+- Pour n’imposer que de la torsion, il suffit par exemple d’imposer deux forces opposées orientées selon j qui induiront une résultante nulle et un moment selon i
 
-\end{mytextbox}
+![$R(\tau) = -F \underline{j}$](figures/solutions/torsion/torsion.png){width="4cm" fig-align="center"}
 
-
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=7cm ]
-3.4  Justifier l’utilisation d’une rosette triaxiale au point 2. Même question pour la rosette bi-axiale au point 3.
-
-\end{mytextbox}
+:::
 
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=20cm ]
-3.5  Déterminer, pour les points 2 et 3, les relations entre les informations expérimentales fournies par les différentes jauges et les composantes de la matrice des déformations en ces points. 
+[]{.question options="1"} 
+
+Déterminer les expressions théoriques des déformations aux points 2 et 3 en fonction de $E$, $\nu$, $R$, $l_0$, $l_1$ et $F$. Puis, faites l’application numérique en vous fixant une longueur de bras de levier $l_0$ comprise entre $50$ et $450~mm$ et une masse comprise entre $5$ et $15~kg$. Déterminer alors toutes les déformations et les directions principales associées au point 3. 
+
+
+::: {.solutionbox arguments="10cm"}
+
+- Pour déterminer les déformations aux 4 points particuliers, il suffit d’appliquer la loi de Hooke (matériau élastique linéaire):
+$$
+\underline{\underline{E}} = \dfrac{1+\nu}{E}  \underline{\underline{\Sigma}} - \dfrac{\nu}{E}\text{trace}(\underline{\underline{\Sigma}}) \underline{\underline{I}} 
+$$
+
+à partir des expressions théoriques des matrices des contraintes en ces points, on obtient ainsi :
+
+**Point 3**
+
+
+:::
+
+
+[]{.question options="1"} 
+
+Rappeler le principe d’une jauge de déformation. Rappeler le principe d’un pont de Wheastone et son intérêt. Quels sont les avantages du montage $\frac{1}{2}$ pont sur le montage  $\frac{1}{4}$ de pont ?
+
+::: {.solutionbox arguments="3cm"}
+
+::: 
+
+
+
+
+[]{.question options="1"} 
+Justifier l’utilisation d’une rosette triaxiale au point 2. Même question pour la rosette bi-axiale au point 3.
+
+::: {.solutionbox arguments="5cm"}
+
+::: 
+
+
+
+
+Déterminer, pour les points 2 et 3, les relations entre les informations expérimentales fournies par les différentes jauges et les composantes de la matrice des déformations en ces points. 
 Pour rappel, la dilatation linéique relative associée à une direction $\underline{n}$ en un point $M$ s’écrit: 
 $\underline{\epsilon}(M, n) = \underline{^t n} \underline{\underline{E}} (M)\cdot \underline{n}$
 
-\end{mytextbox}
+::: {.solutionbox arguments="5cm"}
+
+::: 
 
 
-\begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=20cm ]
-3.6 Etude de la linéarité du comportement au point 2 de la jauge orientée selon $\underline{a}$
-En vous appuyant sur les résultats des questions 3.5. et 3.2., quelle est la relation théorique exacte attendue entre la réponse en déformation  mesurée   et la charge appliquée F ? 
-\end{mytextbox}
 
+\question Etude de la linéarité du comportement au point 2 de la jauge orientée selon $\underline{a}$. En vous appuyant sur les résultats des questions 3.5. et 3.2., quelle est la relation théorique exacte attendue entre la réponse en déformation  mesurée   et la charge appliquée F ? 
+
+
+::: {.solutionbox arguments="5cm"}
+
+::: 
+
+:::
+---
+
+## Partie experimentale
 
 Vérifier cette linéarité (montage $\frac{1}{4}$ de pont) en utilisant Regressi ou Excel.
 Calculer l’écart relatif entre pente théorique et pente expérimentale. Faites une liste la plus exhaustive possible des incertitudes associées aux valeurs théorique et expérimentale qui peuvent expliquer cet écart relatif non nul ?
 
 
-
-
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=10cm ]
-3.7. Etude du point 2 en $\frac{1}{4}$ de pont
+- Etude du point 2 en $\frac{1}{4}$ de pont.
 
 Déterminer expérimentalement la matrice des déformations au point 2 pour une charge F et une longueur de bras $l_0$ fixées (reprendre les valeurs utilisées à la question 3.2.). 
 Comparer vos résultats expérimentaux aux résultats théoriques déterminés à la question 3.2. 
@@ -274,7 +291,7 @@ Calculez l’écart relatif entre ces différentes valeurs ?
 \end{mytextbox}
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=10cm ]
-3.8. Etude du point 2 en $\dfrac{1}{2}$ pont
+- Etude du point 2 en $\dfrac{1}{2}$ pont
 
 Avec la même charge $F$ et la même longueur de bras $l_0$, déterminer expérimentalement la matrice des déformations au point 2 en utilisant cette fois un montage $\frac{1}{2}$ pont. 
 Le montage $\frac{1}{2}$ pont donne-t-il de meilleurs résultats que le $\frac{1}{4}$ de pont ? 
@@ -283,7 +300,8 @@ Dans quels cas, le montage $\frac{1}{2}$ pont est-il indispensable ?
 \end{mytextbox}
 
 \begin{mytextbox}[colupper=blue,fontupper=\bfseries, height=10cm ]
-3.9 Etude du point 3 
+-  Etude du point 3 
+
 Déterminer expérimentalement l’état de déformation associé au point 3 en mesurant $\epsilon_a$ puis $\epsilon_b$. 
 Comparer avec les résultats théoriques (écart relatif).
 Comment expliquez-vous les écarts mesurés entre $\epsilon_a$ et $\epsilon_b$ ? 

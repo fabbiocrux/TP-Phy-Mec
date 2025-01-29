@@ -1,0 +1,29 @@
+project:
+  output-dir: pdfs
+
+format:
+  pdf:
+    toc: false 
+    documentclass: exam
+    geometry:
+     - top=25mm
+     - left=20mm
+     - bottom=25mm
+     - right=20mm             
+    number-sections: true
+    colorlinks: true
+    classoption:
+     - 12pt 
+     - answers 
+    keep-tex: false
+    include-in-header:
+     - assets/examen.tex
+    template-partials: 
+     - assets/before-body.tex
+filters:
+  - latex-environment
+commands: [question, part, choice ]
+environments: [center, parts, questions, checkboxes, solutionbox, minipage]
+#filters: [remove_title.lua]
+#callout-appearance: simple
+license: CC BY-SA
